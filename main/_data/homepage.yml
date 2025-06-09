@@ -1,0 +1,18 @@
+####################### banner #######################################
+banner:
+  enable: true
+  title: "欢迎访问贸易科技资源小站"
+  subtitle: "汇聚贸易领域的科研论文与数据资源，助力学术研究与技术创新"
+  image: "/assets/images/banner/illustration.svg"
+  bg_image: "/assets/images/banner/banner-bg.svg"
+
+######################## call to action ###############################
+call_to_action:
+  enable: false
+  title: "Get the best jekyll templates"
+  image: "/assets/images/jekyll-muscot.svg"
+  description: "Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus."
+  button:
+    enable: true
+    label: "Visit Here"
+    link: "https://themefisher.com/jekyll-themes/"

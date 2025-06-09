@@ -1,0 +1,70 @@
+########################### Navigation ###################################
+menu:
+  # main menu
+  main:
+    - { name: 主页, url: "/" }
+    - { name: 论文资源, url: "/paperlist"}
+    - { name: 数据资源, url: "/datalist"}
+
+    # - { name: Contact, url: "contact.html" }
+    # - { name: Tools, url: "tools.html" }
+
+  ##### Dropdown menu ######
+
+  # - name: dropdown
+  #   submenu:
+  #   - name : "d1"
+  #     url : "#"
+  #   - name : "d2"
+  #     url : "#"
+
+  ##########################
+
+  # Footer menu
+  footer:
+    - { name: 主页, url: "/" }
+    - { name: 论文资源, url: "/paperlist"}
+    - { name: 数据资源, url: "/datalist"}
+    # - { name: Contact, url: "contact.html" }
+    # - { name: Tools, url: "tools.html" }
+
+######################### Default Parameters ###########################
+
+# logo
+logo: "/assets/images/logo-removebg.png"
+# meta data
+author: "Chuan Qin"
+description: "This is demo website of trade source"
+# google analitycs ID
+google_analitycs_id: "" # your id
+# contact form action
+contact_form_action: "#" # contact form works with : https://formspree.io
+# copyright
+copyright: "Copyright &copy; 2025 Designed and Developed by [Chuan Qin](https://dylan-qin.github.io/)"
+
+# preloader
+preloader:
+  enable: true
+  preloader: "" # use png, jpg, svg or gif format
+
+# search
+search:
+  enable: true
+
+############################## Social Site ##########################
+social:
+  - name: "facebook"
+    icon: "ti-facebook" # themify icon pack https://themify.me/themify-icons
+    link: "#"
+
+  - name: "twitter"
+    icon: "ti-twitter-alt" # themify icon pack https://themify.me/themify-icons
+    link: "#"
+
+  - name: "github"
+    icon: "ti-github" # themify icon pack https://themify.me/themify-icons
+    link: "#"
+
+  - name: "linkedin"
+    icon: "ti-linkedin" # themify icon pack https://themify.me/themify-icons
+    link: "#"

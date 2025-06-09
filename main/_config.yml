@@ -1,0 +1,63 @@
+baseurl: "/main" # the subpath of your site, e.g. blog/
+url: "https://demo.themefisher.com" # the base hostname & protocol for your site, e.g. http://example.com/
+
+title: 贸易资源小站 | CNIC-DSL Chuan Qin
+description: >- # this means to ignore newlines until "baseurl:"
+  这是关于贸易相关的科学数据、论文资源汇聚的网站，欢迎点击使用
+
+#################### Comment Section (Disqus) ################
+disqus_shortname: "" # Add your shortname for Disqus Comment. For example : mr-brown
+
+# Scss Directory
+sass:
+  sass_dir: assets/scss
+  style: compressed
+
+# Build settings
+markdown: kramdown
+permalink: pretty
+plugins:
+  - jekyll-paginate-v2
+  - jekyll-sitemap
+  - jekyll/tagging
+
+# paginate: 6
+# paginate_path: "/page/:num"
+
+pagination:
+  enabled: true
+  per_page: 6
+  paginate_path: "/page/:num/"
+  title: "Page :num"
+  limit: 0
+  sort_field: "date"
+  sort_reverse: true
+
+# include
+include:
+  - _pages
+
+# Pages Path
+defaults:
+  - scope:
+      path: "_pages"
+    values:
+      permalink: /:basename:output_ext
+
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      permalink: post/:title:output_ext
+      layout: post
+
+# Tags
+tag_page_dir: tag
+tag_page_layout: tags
+tag_permalink_style: pretty
+
+# Exclude from processing.
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - vendor
