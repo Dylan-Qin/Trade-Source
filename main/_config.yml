@@ -1,5 +1,5 @@
 baseurl: "/main" # the subpath of your site, e.g. blog/
-url: "https://demo.themefisher.com" # the base hostname & protocol for your site, e.g. http://example.com/
+url: "https://dylan-qin.github.io/Trade-Source/" # the base hostname & protocol for your site, e.g. http://example.com/
 
 title: 贸易资源小站 | CNIC-DSL Chuan Qin
 description: >- # this means to ignore newlines until "baseurl:"
