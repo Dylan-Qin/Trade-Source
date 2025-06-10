@@ -1,0 +1,14 @@
+---
+layout: post
+categories: paper
+title: "Internal AuditRiskManagement in Metropolitan Municipalities"
+author: "Christo Ackermann"
+date: 2016-07-28
+tags: ['Internal Audit; Risk Management; Public Sector; Municipalities; South Africa; Mixed Methods']
+---
+
+Internal audit functions (IAFs) of organisations are regarded as crucial components of the combined assurance model, alongside the audit committee, management and external auditors. The combined assurance model aims at having integrated and aligned assurance in organisations with the overall aim of maximising risk and governance oversight and control efficiencies. In this regard, internal audit plays a crucial role, insofar as it consists of experts in risk, governance and control consultancy who provide assurance to senior management and the audit committee. Audit committees are dependent on internal audit for information and their effectiveness revolves around a strong and well-resourced internal audit function which is able to aid audit committees to meet their oversight responsibilities. There is thus a growing demand for managing risk through the process of risk management and internal audit is in a perfect position to assist with the improvement of such processes. If internal auditors wish to continue being an important aspect of the combined assurance model, they need to address the critical area, amongst others, of risk management as part of their work. If not, it follows that the board, audit committees and other levels of management will remain uninformed on the status of these matters which, in turn, will negatively impact the ability of these stakeholders to discharge their responsibilities. This study therefore focuses on analysing the functioning of IAFs, with specific reference to their risk management mandate. The study followed a mixed method approach to describe internal audits risk management functioning in the big eight metropolitan municipalities in South Africa. The results show that internal audit provide a broad scope of risk management work which assist senior management in the discharge of their responsibilities. However, in the public eye, internal audits risk management functioning is scant.
+
+组织的内部审计职能（IAFs）被视为联合保证模式中的关键组成部分，与审计委员会、管理层及外部审计机构并列。联合保证模式旨在通过整合与协调各方的保证工作，最大化组织的风险与治理监督及控制效率。在此框架下，内部审计发挥着核心作用——其由风险、治理及控制咨询领域的专家组成，为高级管理层和审计委员会提供保证服务。审计委员会依赖内部审计获取信息，其效能的发挥离不开一个资源充足、能力强劲的内部审计职能，后者能协助审计委员会履行监督职责。因此，通过风险管理流程管控风险的需求日益增长，而内部审计恰好能协助优化此类流程。若内部审计师希望持续成为联合保证模式的重要支柱，就必须将风险管理等关键领域纳入工作范畴。否则，董事会、审计委员会及其他管理层级将无法掌握这些事项的动态，进而削弱相关方履行职责的能力。本研究着重分析内部审计职能的运行机制，尤其关注其风险管理职责。研究采用混合方法，描述了南非八大都市市政当局内部审计的风险管理运作情况。结果显示，内部审计提供了广泛的风险管理工作，有效支持高级管理层履职。然而在公众视野中，内部审计的风险管理职能仍显不足。
+
+资源链接: [Internal AuditRiskManagement in Metropolitan Municipalities](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2815237)

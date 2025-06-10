@@ -3,30 +3,69 @@
   <div class="col-12">
     <nav>
       <ul class="pagination justify-content-center align-items-center">
+        {% assign total_pages = paginator.total_pages %}
+        {% assign current_page = paginator.page %}
+        {% assign window = 2 %}
+        {% assign jump_delta = 5 %}
+
+        <!-- Previous page -->
+        {% if paginator.previous_page %}
         <li class="page-item">
-          {% if paginator.previous_page %}
-          <a class="page-link" href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: "//" "/" }}/">&laquo;</a>
+          <a class="page-link" href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: "//", "/" }}">&laquo;</a>
+        </li>
+        {% endif %}
+
+        {% assign window_start = current_page | minus: window %}
+        {% assign window_end = current_page | plus: window %}
+
+        {% if window_start < 1 %}
+          {% assign window_start = 1 %}
+        {% endif %}
+        {% if window_end > total_pages %}
+          {% assign window_end = total_pages %}
+        {% endif %}
+
+        <!-- First page + front ellipsis -->
+        {% if window_start > 1 %}
+          <li class="page-item"><a class="page-link" href="{{ site.baseurl }}/">1</a></li>
+          {% assign jump_back = current_page | minus: jump_delta %}
+          {% if jump_back > 1 %}
+          <li class="page-item">
+            <a class="page-link" href="{{ site.paginate_path | prepend: site.baseurl | replace: ':num', jump_back }}">…</a>
+          </li>
           {% endif %}
-        </li>
-        
-        {% for page in (1..paginator.total_pages) %}
-        {% if page == paginator.page %}
-        <li class="page-item active">
-          <span class="page-link">{{page}}</span>
-        </li>
-        {% elsif page == 1 %}
-          <li class="page-item"><a class="page-link" href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: "//" "/" }}/">{{ page }}</a></li>
-        {% else %}
-          <li class="page-item"><a class="page-link" href="{{ site.paginate_path | prepend: site.baseurl | replace: ':num', page }}/">{{ page }}</a>
+        {% endif %}
+
+        <!-- Page numbers in window -->
+        {% for i in (window_start..window_end) %}
+          {% if i == current_page %}
+          <li class="page-item active"><span class="page-link">{{ i }}</span></li>
+          {% elsif i == 1 %}
+          <li class="page-item"><a class="page-link" href="{{ site.baseurl }}/">{{ i }}</a></li>
+          {% else %}
+          <li class="page-item"><a class="page-link" href="{{ site.paginate_path | prepend: site.baseurl | replace: ':num', i }}">{{ i }}</a></li>
+          {% endif %}
+        {% endfor %}
+
+        <!-- Back ellipsis + last page -->
+        {% if window_end < total_pages %}
+          {% assign jump_forward = current_page | plus: jump_delta %}
+          {% if jump_forward < total_pages %}
+          <li class="page-item">
+            <a class="page-link" href="{{ site.paginate_path | prepend: site.baseurl | replace: ':num', jump_forward }}">…</a>
+          </li>
+          {% endif %}
+          <li class="page-item">
+            <a class="page-link" href="{{ site.paginate_path | prepend: site.baseurl | replace: ':num', total_pages }}">{{ total_pages }}</a>
           </li>
         {% endif %}
-        {% endfor %}
-      
+
+        <!-- Next page -->
+        {% if paginator.next_page %}
         <li class="page-item">
-          {% if paginator.next_page %}
-          <a class="page-link" href="{{ paginator.next_page_path | prepend: site.baseurl }}/">&raquo;</a>
-          {% endif %}
+          <a class="page-link" href="{{ paginator.next_page_path | prepend: site.baseurl | replace: "//", "/" }}">&raquo;</a>
         </li>
+        {% endif %}
       </ul>
     </nav>
   </div>

@@ -1,0 +1,14 @@
+---
+layout: post
+categories: paper
+title: "Economics of User Segmentation, Profiling, andDetectionin Security"
+author: "Bin Mai"
+date: 2006-07-17
+tags: ['user profiling', ' inteligent adversary', ' detection system']
+---
+
+User profiling, which classifies users into different risk classes, is regarded as a cost effective method to ensure adequate security of critical assets and services in many domains in which adversaries have heterogeneous incentives to commit security breaches. The benefit of profiling is that it allows firms to use an optimally designed and possibly a different detection system for each risk class whereas all users will be sent through the same detection system when profiling is not used. While profiling can be a useful tool in security, we show that the use of profiling and multiple detection systems increases high-risk users' incentives to fake their identity, and that this incentive increases when the profiling accuracy increases. The direct effect of an increase in the profiling accuracy is the increase in the likelihood that a high-risk user faking his identity will be classified as a low-risk user. The indirect effect is that the higher disparity in optimal detection rates for the high- and low-risk users resulting from a higher profiling accuracy provides more incentive for high-risk users to fake.  If faking is sufficiently easy or the profiling accuracy is sufficiently poor, then the use of profiling results in a more expensive and less secure security system. We show that, in order to reap the maximum benefit out of profiling, an improvement in the accuracy of profiling technology should be accompanied by a minimum level of increase in the users' cost to fake or cheat the profiling system. If faking is not an issue, then it is optimal for a firm to design detection systems that operate at their efficient detection rates; the efficient detection rate for a high-risk (low-risk) user increases (decreases) when the profiling accuracy increases. However, we show that, when faking is possible, if the profiling accuracy is higher than a threshold value, then it is optimal to make the detection systems more similar by degrading the detection rate of the detection system for a high-risk user and enhancing the detection rate of the detection system for a low-risk user.
+
+用户画像技术通过将用户划分为不同风险等级，被视为保障关键资产与服务安全的成本效益型方法，尤其适用于攻击动机存在显著差异的多个领域。该技术的优势在于：企业可为每个风险等级定制最优检测系统，而无画像技术时所有用户需通过同一套检测机制。尽管画像技术能提升安防效能，但我们的研究表明，采用多套检测系统会刺激高风险用户伪造身份，且这种动机随着画像精度的提升而增强。精度提高的直接效应是：高风险用户伪装成低风险类别的成功率上升；间接效应则是：高低风险用户间最优检测率的差距扩大，进一步激励高风险用户实施身份欺诈。若伪造成本过低或画像精度过差，采用画像技术反而会导致安防系统成本攀升且防护效能下降。研究证明，要最大化画像技术收益，必须在提升画像精度的同时，同步提高用户伪造身份的最低成本门槛。当不存在身份伪造风险时，企业最优策略是让高低风险用户的检测系统分别运行在效率最优的检测率——画像精度提升会相应提高（降低）对高风险（低风险）用户的检测强度。但存在伪造行为时，若画像精度超过临界值，则需通过降低高风险用户检测强度、提升低风险用户检测强度，使两套系统检测率趋同才符合最优策略。
+
+资源链接: [Economics of User Segmentation, Profiling, andDetectionin Security](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=916373)

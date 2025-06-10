@@ -1,0 +1,14 @@
+---
+layout: post
+categories: paper
+title: "An Analysis of Korea’s Environmental GoodsTradeto China and its Policy Implications"
+author: "Daejong Gwak"
+date: 2022-12-09
+tags: ['environmental goods and services', ' EGS', ' EGS trade', ' trade liberalization', ' tariffs', ' tariff barriers', ' non-tariff barriers', ' NBTs', ' Korea', ' China', ' service trade', ' trade policy', ' environmental policy']
+---
+
+Amid increasing implementations of various regulations and measures for environmental protection in many countries with the widening awareness of environmental issues, the discussion of trade liberalization of environmental goods and services (EGS) in the international community has also been revitalized. Since its establishment in 1995, the WTO (World Trade Organization) has discussed this subject in the trade and environment committee. One of the main issues is lowering tariff levels and the reduction and elimination of non-tariff barriers on EGS.With regard to trade liberalization of environment-related goods in the Asia-Pacific Economic Cooperation (APEC) Ministerial Meeting of 2012, it was agreed that discussions on trade liberalization will be focused on 54 items by HS 6-digit classification. Among these 54 items, the photovoltaic equipment solar panels, wind power generators, sorting crushers for recycling, liquid filters, and precision equipment for environmental analysis are included. Moreover, even in the WTO, Japan, US, EU, South Korea, Switzerland, Singapore, Australia and Canada started negotiations in January 2014 of a tariff reduction for new environment-related goods in volunteer countries in order to achieve both environmental protection and trade promotion.While Korea’s exports of environmental goods and services remained under the level of 5 billion US dollars in the early 1990s, it soared to over 40 billion US dollars in 2013.This article analyzes Korea’s EGS trade toward China according to the category of common OECD/WTO/APEC EGS classification. Of course, recent trends and issues of trade liberalization of EGS among international institutions such as WTO and APEC are summarized, and the conclusion suggests some policy implications.
+
+随着各国环保意识不断增强，各类环保法规措施日益广泛实施，国际社会关于环境商品与服务（EGS）贸易自由化的讨论也再度活跃。自1995年成立以来，世界贸易组织（WTO）一直在贸易与环境委员会中探讨这一议题，其核心内容之一便是降低环境商品与服务的关税水平及削减非关税壁垒。2012年亚太经合组织（APEC）部长级会议就环境相关产品贸易自由化达成共识，决定以HS六位编码为标准重点讨论54类商品，其中包括光伏设备太阳能板、风力发电机、回收分选破碎机、液体过滤器及环境分析精密仪器等。2014年1月，日本、美国、欧盟、韩国、瑞士、新加坡、澳大利亚和加拿大等国更在WTO框架下启动自愿参与的环境新品关税减让谈判，旨在实现环境保护与贸易促进的双重目标。韩国环境商品与服务出口额从上世纪90年代初不足50亿美元，到2013年已突破400亿美元大关。本文依据经合组织/WTO/APEC通用环境商品与服务分类标准，系统分析了韩国对中国环境商品与服务的贸易状况，梳理了WTO、APEC等国际机构在环境商品与服务贸易自由化方面的最新动态与争议焦点，并在结论部分提出相关政策建议。
+
+资源链接: [An Analysis of Korea’s Environmental GoodsTradeto China and its Policy Implications](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4204517)
