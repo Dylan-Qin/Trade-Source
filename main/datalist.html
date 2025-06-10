@@ -1,5 +1,6 @@
 ---
 layout: default
+cpath: /datalist
 pagination:
   enabled: true
   category: data
@@ -36,7 +37,7 @@ pagination:
           {% include post.html %}
           {% endfor %}
           <!-- pagination -->
-          {% include pagination.html %}
+          {% include pagination.html cpath="/datalist" %}
         </div>
       </div>
     </div>

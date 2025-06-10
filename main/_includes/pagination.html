@@ -12,6 +12,7 @@
         {% if paginator.previous_page %}
         <li class="page-item">
           <a class="page-link" href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: "//", "/" }}">&laquo;</a>
+           <!-- <a class="page-link" href="{{ site.baseurl }}{{ cpath }}{{ paginator.previous_page_path | replace: '//', '/' }}">&laquo;</a> -->
         </li>
         {% endif %}
 
@@ -27,11 +28,15 @@
 
         <!-- First page + front ellipsis -->
         {% if window_start > 1 %}
-          <li class="page-item"><a class="page-link" href="{{ site.baseurl }}/">1</a></li>
+          <li class="page-item">
+            <!-- <a class="page-link" href="{{ site.baseurl }}/">1</a> -->
+             <a class="page-link" href="{{ site.baseurl }}{{ page.cpath }}/">1</a>
+          </li>
           {% assign jump_back = current_page | minus: jump_delta %}
           {% if jump_back > 1 %}
           <li class="page-item">
-            <a class="page-link" href="{{ site.paginate_path | prepend: site.baseurl | replace: ':num', jump_back }}">…</a>
+            <!-- <a class="page-link" href="{{ site.paginate_path | prepend: site.baseurl | replace: ':num', jump_back }}">…</a> -->
+             <a class="page-link" href="{{ site.baseurl }}{{ page.cpath }}{{ site.paginate_path | replace: ':num', jump_back }}">…</a>
           </li>
           {% endif %}
         {% endif %}
@@ -41,9 +46,15 @@
           {% if i == current_page %}
           <li class="page-item active"><span class="page-link">{{ i }}</span></li>
           {% elsif i == 1 %}
-          <li class="page-item"><a class="page-link" href="{{ site.baseurl }}/">{{ i }}</a></li>
+          <li class="page-item">
+            <!-- <a class="page-link" href="{{ site.baseurl }}/">{{ i }}</a> -->
+             <a class="page-link" href="{{ site.baseurl }}{{ page.cpath }}/">{{ i }}</a>
+          </li>
           {% else %}
-          <li class="page-item"><a class="page-link" href="{{ site.paginate_path | prepend: site.baseurl | replace: ':num', i }}">{{ i }}</a></li>
+          <li class="page-item">
+            <!-- <a class="page-link" href="{{ site.paginate_path | prepend: site.baseurl | replace: ':num', i }}">{{ i }}</a> -->
+             <a class="page-link" href="{{ site.baseurl }}{{ page.cpath }}{{ site.paginate_path | replace: ':num', i }}">{{ i }}</a>
+          </li>
           {% endif %}
         {% endfor %}
 
@@ -52,11 +63,15 @@
           {% assign jump_forward = current_page | plus: jump_delta %}
           {% if jump_forward < total_pages %}
           <li class="page-item">
-            <a class="page-link" href="{{ site.paginate_path | prepend: site.baseurl | replace: ':num', jump_forward }}">…</a>
+            <!-- <a class="page-link" href="{{ site.paginate_path | prepend: site.baseurl | replace: ':num', jump_forward }}">…</a> -->
+             <a class="page-link" href="{{ site.baseurl }}{{ page.cpath }}{{ site.paginate_path | replace: ':num', jump_forward }}">…</a>
           </li>
           {% endif %}
           <li class="page-item">
-            <a class="page-link" href="{{ site.paginate_path | prepend: site.baseurl | replace: ':num', total_pages }}">{{ total_pages }}</a>
+            <!-- <a class="page-link" href="{{ site.paginate_path | prepend: site.baseurl | replace: ':num', total_pages }}">{{ total_pages }}</a> -->
+             <!-- DEBUG: cpath = {{ cpath }} -->
+              <!-- DEBUG: cpath = {{ site.baseurl }}{{ cpath }}{{ site.paginate_path | replace: ':num', total_pages }} -->
+            <a class="page-link" href="{{ site.baseurl }}{{ page.cpath }}{{ site.paginate_path | replace: ':num', total_pages }}">{{ total_pages }}</a>
           </li>
         {% endif %}
 
@@ -64,6 +79,9 @@
         {% if paginator.next_page %}
         <li class="page-item">
           <a class="page-link" href="{{ paginator.next_page_path | prepend: site.baseurl | replace: "//", "/" }}">&raquo;</a>
+           <!-- DEBUG: cpath = {{ cpath }} -->
+             <!-- DEBUG: cpath = {{ paginator.next_page_path }} -->
+          <!-- <a class="page-link" href="{{ site.baseurl }}{{ cpath }}{{ paginator.next_page_path | replace: '//', '/' }}">&raquo;</a> -->
         </li>
         {% endif %}
       </ul>

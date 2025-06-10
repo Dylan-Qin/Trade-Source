@@ -1,5 +1,6 @@
 ---
 layout: default
+cpath: /paperlist
 pagination:
   enabled: true
   category: paper
@@ -36,7 +37,7 @@ pagination:
           {% include post.html %}
           {% endfor %}
           <!-- pagination -->
-          {% include pagination.html %}
+          {% include pagination.html cpath="/paperlist" %}
         </div>
       </div>
     </div>
