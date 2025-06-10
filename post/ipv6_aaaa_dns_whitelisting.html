@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <meta charset="utf-8">
+  <title>贸易资源小站 | CNIC-DSL Chuan Qin</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="这是关于贸易相关的科学数据、论文资源汇聚的网站，欢迎点击使用">
+  
+  <!-- theme meta -->
+  <meta name="theme-name" content="northendlab-jekyll" />
+  
+  
+
+  
+  <link rel="stylesheet" href="/main/assets/plugins/bootstrap/bootstrap.min.css">
+  
+  <link rel="stylesheet" href="/main/assets/plugins/themify-icons/themify-icons.css">
+  
+
+  <!-- Main Stylesheet -->
+  <link href="/main/assets/scss/style.css" rel="stylesheet">
+
+  <!--Favicon-->
+  <link rel="shortcut icon" href="/main/assets/images/favicon.png " type="image/x-icon">
+  <link rel="icon" href="/main/assets/images/favicon.png " type="image/x-icon">
+
+  <!-- google-analytics -->
+  
+
+</head>
+
+
+<body>
+	
+	<!-- navigation -->
+<header class="fixed-top navigation">
+  <div class="container">
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-transparent">
+      <a class="navbar-brand" href="/main/"><img class="img-fluid" src="/main/assets/images/logo-removebg.png" alt="贸易资源小站 | CNIC-DSL Chuan Qin" style="width: 100px; height: auto;"></a>
+      <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navigation">
+        <i class="ti-menu h3"></i>
+      </button>
+
+      <div class="collapse navbar-collapse text-center" id="navigation">
+        <ul class="navbar-nav ml-auto">
+          
+            
+
+            <li class="nav-item">
+              <a class="nav-link" href="/main/">主页</a>
+            </li>
+            
+          
+            
+
+            <li class="nav-item">
+              <a class="nav-link" href="/main/paperlist">论文资源</a>
+            </li>
+            
+          
+            
+
+            <li class="nav-item">
+              <a class="nav-link" href="/main/datalist">数据资源</a>
+            </li>
+            
+          
+        </ul>
+        
+        <!-- search -->
+        <div class="search">
+          <button id="searchOpen" class="search-btn"><i class="ti-search"></i></button>
+          <div class="search-wrapper">
+            <form action="/main/search.html" class="h-100">
+              <input class="search-box px-4" id="search-box" name="query" type="search" placeholder="输入查询关键词...">
+            </form>
+            <button id="searchClose" class="search-close"><i class="ti-close text-dark"></i></button>
+          </div>
+        </div>
+        
+      </div>
+    </nav>
+  </div>
+</header>
+<!-- /navigation -->
+	<div class="py-5 d-none d-lg-block"></div>
+	<section class="section">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 mx-auto block shadow mb-5">
+        <h2>IPv6 AAAA DNS Whitelisting</h2>
+        <div class="mb-3 post-meta">
+          
+          Bitag technical working group
+          
+          Jan 14, 2016,
+          
+          
+          <a href="/main/tag/ipv6">Ipv6</a>
+          
+          <a href="/main/tag/whitelisting"> whitelisting</a>
+          
+          <a href="/main/tag/internet"> internet</a>
+          
+          <a href="/main/tag/networking"> networking</a>
+          
+          <a href="/main/tag/whitelisting"> whitelisting</a>
+          
+          <a href="/main/tag/bitag"> bitag</a>
+          
+          <a href="/main/tag/multistakeholder"> multistakeholder</a>
+          
+          <a href="/main/tag/open-internet"> open internet</a>
+          
+          <a href="/main/tag/net-neutrality"> net neutrality</a>
+          
+          
+        </div>
+        
+        <div class="content mb-5">
+          <p>Executive Summary: Internet Protocol version 6 (IPv6) is the new form of addressing for the Internet. IPv6 is being deployed as a result of the exhaustion of the supply of the older form of addressing, Internet Protocol version 4 (IPv4). The Internet is now beginning a global transition from IPv4 to IPv6, although most websites and networks will run both address families in parallel for many years. This document describes the emerging practice of Internet web sites (or, more broadly, “Internet domains”), such as example.com, selectively returning IPv6-related resources from Domain Name System (DNS) servers. As a result, the domain can enable or disable a network (and, as a consequence, that network’s users) from accessing the domain’s content over IPv6. This practice is known as “DNS Whitelisting” and is intended as a means to smooth the global transition from IPv4 to IPv6. DNS Whitelisting was first used by major web content sites. These web site operators observed that when they added IPv6 records to their DNS servers in order to support IPv6 access to their content, a fraction of end users had slow or otherwise impaired access to this content. Major domains are motivated by a desire to maintain a high-quality user experience for all of their users, as well as to shift traffic to IPv6 in a controlled manner. Thus, domains engaging in DNS Whitelisting are attempting to shield users with impaired access from the symptoms of those impairments until they can be remedied. Those domains are also interested in having a degree of control over their own migration to IPv6 that they would otherwise lack without DNS Whitelisting, so that IPv6 traffic can be added gradually as IPv6 operations and network practices mature. At the same time, critics of the practice have articulated a range of technical and non-technical concerns and are focused on ensuring that DNS Whitelisting, when implemented, is done in a manner that is transparent, non-discriminatory, and not anti-competitive. Generally speaking, a domain that implements DNS Whitelisting does so manually. This means that the domain manually maintains a list of networks that are permitted to receive IPv6 records (via their DNS resolver IP addresses) and that these networks typically submit applications in order to be added to the DNS Whitelist. Domain operators foresee that a second phase of DNS Whitelisting may emerge in the future, possibly in the near future. In this new phase a domain would return IPv6 and/or IPv4 records dynamically based on automatically detected technical capabilities, location, or other factors. It would then function much like (or as part of) global server load balancing, a common suite of practices already in use today. Furthermore, in this second phase, networks might be added to and removed from a DNS Whitelist automatically, and possibly on a near-real-time basis. This means that networks may no longer need to apply to be added to a whitelist, which could alleviate some of the issues addressed herein. Since this future phase has yet to emerge, this document and its suggestions apply only to the DNS Whitelisting practices currently known to the BITAG. The BITAG reserves its opinion on future alternative practices until they can be articulated and evaluated. Although current implementations are not perceived to have this impact, the BITAG is interested in this issue on that grounds that, without careful and monitored deployment, some whitelisting services could in the future be viewed as anti-competitive, discriminatory or in violation of some other public policy objective. The practice may be viewed as controversial and the manner in which it is employed could result in concerns or complaints. As a result, it is important to inform the public and policymakers about why DNS Whitelisting is used and how it functions, to identify concerns surrounding its use, and to outline some potential implementation steps that domains could take to minimize the risk of complaints and controversy. The BITAG has formulated a set of suggested practices regarding the implementation of DNS Whitelisting to help reduce such complaints, acknowledging that practices may vary as a domain moves from experimentation with whitelisting and IPv6 to a point of operational stability.</p>
+
+<p>执行摘要：互联网协议第六版（IPv6）是新一代互联网寻址形式。由于旧版寻址协议IPv4地址资源枯竭，IPv6正逐步部署。尽管大多数网站和网络将在未来多年并行支持两种地址体系，全球互联网已开始从IPv4向IPv6过渡。本文阐述了互联网域名（如example.com）通过域名系统（DNS）服务器选择性返回IPv6相关资源的新兴实践。该机制使得域名管理者能按需控制特定网络（及该网络用户）通过IPv6访问内容的能力，这种被称为”DNS白名单”的技术旨在平滑全球IPv6过渡进程。. . DNS白名单最初由大型内容网站采用。这些运营商发现，当他们在DNS服务器添加IPv6记录以支持IPv6访问时，部分终端用户会出现访问延迟或质量下降的情况。主要域名运营商既希望维持所有用户的高质量体验，又需要可控地迁移IPv6流量，因此通过白名单机制暂时隔离存在访问障碍的用户，直至问题解决。该技术也使运营商能自主掌控IPv6迁移节奏，随着IPv6运营和网络实践的成熟逐步增加流量。. . 批评者则从技术与非技术层面提出诸多质疑，强调白名单实施过程应保持透明、非歧视且不违反公平竞争原则。当前白名单主要通过人工维护：运营商手动管理允许接收IPv6记录的网络列表（基于其DNS解析器IP地址），相关网络通常需提交申请才能加入白名单。业界预期未来可能出现第二阶段演进——基于自动检测的技术能力、地理位置等因素动态返回IPv6/IPv4记录，其功能将类似于（或作为）当前已广泛应用的全局服务器负载均衡系统。在此阶段，网络可能实现近实时自动增减白名单，从而缓解现行机制的部分问题。. . 鉴于第二阶段尚未成形，本文建议仅针对BITAG已知的现行白名单实践。BITAG对尚未明确的未来实践持保留意见。虽然目前未发现负面影响，但BITAG关注到若缺乏审慎部署，某些白名单服务可能在未来被视为反竞争、歧视性或违背公共政策目标。该技术可能存在争议，其应用方式可能引发担忧。因此有必要向公众和政策制定者阐明DNS白名单的应用原理，识别潜在问题，并列举可减少争议的实施建议。. . BITAG制定了一套实施建议，帮助降低争议风险，同时承认随着域名运营商从IPv6试验阶段过渡到稳定运营阶段，具体实践可能存在差异。</p>
+
+<p>资源链接: <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2701509">IPv6 AAAA DNS Whitelisting</a></p>
+
+        </div>
+        <!-- comments -->
+        
+          <!-- disqus-comments -->
+<div class="comments" style="padding: 1rem 0">
+  <div id="disqus_thread" class="comments__article"></div>
+  <script>
+    (function () {
+      var d = document, s = d.createElement('script');
+      s.src = '//.disqus.com/embed.js';
+      s.setAttribute('data-timestamp', +new Date());
+      (d.head || d.body).appendChild(s);
+    })();
+  </script>
+  <noscript>Please enable JavaScript to view the
+    <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a>
+  </noscript>
+</div>
+<!-- /disqus-comments -->
+        
+        <!-- /comments -->
+      </div>
+    </div>
+  </div>
+</section>
+	<!-- footer -->
+<footer class="py-4 bg-light border-top">
+  <div class="container">
+    <div class="row justify-content-between align-items-center">
+      <div class="col-lg-4 text-center text-lg-left mb-4 mb-lg-0">
+        <a href="/main/" class="d-block pb-3"><img src="/main/assets/images/logo-removebg.png" class="img-fluid" alt="贸易资源小站 | CNIC-DSL Chuan Qin" style="width: 150px; height: auto;"></a>
+      </div>
+      <div class="col-lg-4 text-center mb-4 mb-lg-0">
+        <ul class="list-inline mb-0">
+          
+          <li class="list-inline-item"><a class="text-dark d-block p-2" href="/main/">主页</a></li>
+          
+          <li class="list-inline-item"><a class="text-dark d-block p-2" href="/main/paperlist">论文资源</a></li>
+          
+          <li class="list-inline-item"><a class="text-dark d-block p-2" href="/main/datalist">数据资源</a></li>
+          
+        </ul>
+      </div>
+      <!-- <div class="col-lg-4 text-lg-right text-center mb-4 mb-lg-0">
+        <ul class="list-inline social-icon mb-0">
+          
+          <li class="list-inline-item"><a href="/main/"><i class="ti-facebook"></i></a></li>
+          
+          <li class="list-inline-item"><a href="/main/"><i class="ti-twitter-alt"></i></a></li>
+          
+          <li class="list-inline-item"><a href="/main/"><i class="ti-github"></i></a></li>
+          
+          <li class="list-inline-item"><a href="/main/"><i class="ti-linkedin"></i></a></li>
+          
+        </ul>
+      </div> -->
+    </div>
+    <div class="text-center mt-4">
+      <span><p>Copyright © 2025 Designed and Developed by <a href="https://dylan-qin.github.io/">Chuan Qin</a></p>
+</span>
+    </div>
+  </div>
+</footer>
+<!-- /footer -->
+
+<!-- JS Plugins -->
+
+<script src="/main/assets/plugins/jQuery/jquery.min.js"></script>
+
+<script src="/main/assets/plugins/bootstrap/bootstrap.min.js"></script>
+
+<script src="/main/assets/plugins/search/lunr.min.js"></script>
+
+<script src="/main/assets/plugins/search/search.js"></script>
+
+
+<!-- Main Script -->
+<script src="/main/assets/js/script.js"></script>
+</body>
+
+</html>

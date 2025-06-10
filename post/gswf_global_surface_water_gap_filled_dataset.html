@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <meta charset="utf-8">
+  <title>贸易资源小站 | CNIC-DSL Chuan Qin</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="这是关于贸易相关的科学数据、论文资源汇聚的网站，欢迎点击使用">
+  
+  <!-- theme meta -->
+  <meta name="theme-name" content="northendlab-jekyll" />
+  
+  
+
+  
+  <link rel="stylesheet" href="/main/assets/plugins/bootstrap/bootstrap.min.css">
+  
+  <link rel="stylesheet" href="/main/assets/plugins/themify-icons/themify-icons.css">
+  
+
+  <!-- Main Stylesheet -->
+  <link href="/main/assets/scss/style.css" rel="stylesheet">
+
+  <!--Favicon-->
+  <link rel="shortcut icon" href="/main/assets/images/favicon.png " type="image/x-icon">
+  <link rel="icon" href="/main/assets/images/favicon.png " type="image/x-icon">
+
+  <!-- google-analytics -->
+  
+
+</head>
+
+
+<body>
+	
+	<!-- navigation -->
+<header class="fixed-top navigation">
+  <div class="container">
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-transparent">
+      <a class="navbar-brand" href="/main/"><img class="img-fluid" src="/main/assets/images/logo-removebg.png" alt="贸易资源小站 | CNIC-DSL Chuan Qin" style="width: 100px; height: auto;"></a>
+      <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navigation">
+        <i class="ti-menu h3"></i>
+      </button>
+
+      <div class="collapse navbar-collapse text-center" id="navigation">
+        <ul class="navbar-nav ml-auto">
+          
+            
+
+            <li class="nav-item">
+              <a class="nav-link" href="/main/">主页</a>
+            </li>
+            
+          
+            
+
+            <li class="nav-item">
+              <a class="nav-link" href="/main/paperlist">论文资源</a>
+            </li>
+            
+          
+            
+
+            <li class="nav-item">
+              <a class="nav-link" href="/main/datalist">数据资源</a>
+            </li>
+            
+          
+        </ul>
+        
+        <!-- search -->
+        <div class="search">
+          <button id="searchOpen" class="search-btn"><i class="ti-search"></i></button>
+          <div class="search-wrapper">
+            <form action="/main/search.html" class="h-100">
+              <input class="search-box px-4" id="search-box" name="query" type="search" placeholder="输入查询关键词...">
+            </form>
+            <button id="searchClose" class="search-close"><i class="ti-close text-dark"></i></button>
+          </div>
+        </div>
+        
+      </div>
+    </nav>
+  </div>
+</header>
+<!-- /navigation -->
+	<div class="py-5 d-none d-lg-block"></div>
+	<section class="section">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 mx-auto block shadow mb-5">
+        <h2>GSWF: Global Surface Water gap-Filled dataset</h2>
+        <div class="mb-3 post-meta">
+          
+          Zhen hao, feng ling
+          
+          Jul 19, 2024,
+          
+          
+          <a href="/main/tag/jrc-global-surface-water">Jrc global surface water</a>
+          
+          <a href="/main/tag/dataset"> dataset</a>
+          
+          <a href="/main/tag/global-water-resources"> global water resources</a>
+          
+          <a href="/main/tag/38-years"> 38 years</a>
+          
+          <a href="/main/tag/high-resolution"> high-resolution</a>
+          
+          <a href="/main/tag/30-meters"> 30 meters</a>
+          
+          <a href="/main/tag/climate-change"> climate change</a>
+          
+          <a href="/main/tag/water-management"> water management</a>
+          
+          <a href="/main/tag/environmental-monitoring"> environmental monitoring</a>
+          
+          <a href="/main/tag/gap"> gap</a>
+          
+          <a href="/main/tag/invalid-observations"> invalid observations</a>
+          
+          <a href="/main/tag/landsat-archive"> landsat archive</a>
+          
+          <a href="/main/tag/data-gap"> data gap</a>
+          
+          <a href="/main/tag/self-supervised-learning"> self-supervised learning</a>
+          
+          <a href="/main/tag/seasonal-water-areas"> seasonal water areas</a>
+          
+          <a href="/main/tag/deep-learning-model"> deep learning model</a>
+          
+          <a href="/main/tag/spatio-temporal-patterns"> spatio-temporal patterns</a>
+          
+          <a href="/main/tag/water-bodies"> water bodies</a>
+          
+          <a href="/main/tag/geotiff"> geotiff</a>
+          
+          <a href="/main/tag/water-non-water"> water/non-water</a>
+          
+          <a href="/main/tag/good-quality-bad-quality"> good quality/bad quality</a>
+          
+          <a href="/main/tag/single-bit-storage"> single-bit storage</a>
+          
+          <a href="/main/tag/quality-score"> quality score</a>
+          
+          <a href="/main/tag/256x256-gap-filled-block"> 256x256 gap-filled block</a>
+          
+          <a href="/main/tag/valid-observations"> valid observations</a>
+          
+          <a href="/main/tag/binary-quality-score"> binary quality score</a>
+          
+          <a href="/main/tag/high-quality"> high-quality</a>
+          
+          <a href="/main/tag/low-quality"> low-quality</a>
+          
+          <a href="/main/tag/2"> 2%</a>
+          
+          
+        </div>
+        
+        <div class="content mb-5">
+          <p>The JRC Global Surface Water (GSW) dataset is a valuable resource for tracking changes in global water resources over 38 years (1984-2021), with a high-resolution of 30 meters. This dataset plays an essential role in understanding climate change, water management, and environmental monitoring. However, around one-third of the dataset is affected by gap or invalid observations, mainly due to issues with the Landsat archive. This data gap can significantly limit the dataset’s usefulness in various real-world applications. To overcome this challenge, we developed a self-supervised learning method to fill in the data gap in seasonal water areas. Our deep learning model is trained to recognize the spatio-temporal patterns of water bodies and effectively fill in the data gap. We created a large training dataset using the JRC GSW dataset with simulated gap areas to teach the model how to fill in the gaps.Each GeoTIFF file in the dataset has two bands:1. Water/Non-Water (Binary): Indicates whether the pixel is water (1) or non-water (0).2. Good Quality/Bad Quality (Binary): Indicates whether the pixel is of good quality (1) or bad quality (0).The dataset uses a single-bit storage format to save memory.Quality Score CalculationThe quality score in our dataset is a binary score assigned to each 256x256 gap-filled block. It is calculated based on the proportion of valid observations within the block. A quality score of 1 indicates a high-quality block, while a score of 0 represents a low-quality block. The quality score calculation process is as follows:1. For each 256x256 block, count the number of valid observations (pixels with a “good quality” value of 1 in the Good Quality/Bad Quality band). Calculate the percentage of valid observations in the block by dividing the number of valid observations by the total number of pixels in the block (256x256 = 65,536).2. Assign a binary quality score to the block:If the percentage of valid observations is equal to or greater than 2%, assign a quality score of 1 (high quality).If the percentage of valid observations is less than 2%, assign a quality score of 0 (low quality).V2: Some data descriptions have been improved.</p>
+
+<p>JRC全球地表水（GSW）数据集是追踪38年间（1984-2021）全球水资源变化的高价值资源，其分辨率高达30米。该数据集对理解气候变化、水资源管理和环境监测具有重要作用。然而，约三分之一的数据受空缺或无效观测影响，主要源于Landsat档案问题。这种数据空缺会极大限制该数据集在实际应用中的效用。为解决这一挑战，我们开发了一种自监督学习方法以填补季节性水域的数据空缺。我们的深度学习模型通过识别水体的时空模式来有效填补数据空缺。我们利用JRC GSW数据集创建了包含模拟空缺区域的大型训练数据集，用于指导模型填补空缺。  . . 数据集中的每个GeoTIFF文件包含两个波段：  . 1. 水体/非水体（二值）：标记像素为水体（1）或非水体（0）。  . 2. 优质/劣质（二值）：标记像素为优质（1）或劣质（0）。  . 数据集采用单比特存储格式以节省内存。  . . <strong>质量分数计算</strong>  . 数据集中的质量分数是对每个256x256填补区块赋予的二值分数，基于区块内有效观测的比例计算。质量分数1表示高质量区块，0表示低质量区块。计算流程如下：  . 1. 对每个256x256区块，统计有效观测数量（即”优质/劣质”波段中值为1的像素数）。将有效观测数除以区块总像素数（256x256=65,536）得到有效观测百分比。  . 2. 为区块分配二值质量分数：  .    - 若有效观测百分比≥2%，则质量分数为1（高质量）；  .    - 若有效观测百分比&lt;2%，则质量分数为0（低质量）。  . . <strong>V2版本说明</strong>：部分数据描述已优化。</p>
+
+<p>资源链接: <a href="https://doi.org/10.57760/sciencedb.10744">GSWF: Global Surface Water gap-Filled dataset</a></p>
+
+        </div>
+        <!-- comments -->
+        
+          <!-- disqus-comments -->
+<div class="comments" style="padding: 1rem 0">
+  <div id="disqus_thread" class="comments__article"></div>
+  <script>
+    (function () {
+      var d = document, s = d.createElement('script');
+      s.src = '//.disqus.com/embed.js';
+      s.setAttribute('data-timestamp', +new Date());
+      (d.head || d.body).appendChild(s);
+    })();
+  </script>
+  <noscript>Please enable JavaScript to view the
+    <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a>
+  </noscript>
+</div>
+<!-- /disqus-comments -->
+        
+        <!-- /comments -->
+      </div>
+    </div>
+  </div>
+</section>
+	<!-- footer -->
+<footer class="py-4 bg-light border-top">
+  <div class="container">
+    <div class="row justify-content-between align-items-center">
+      <div class="col-lg-4 text-center text-lg-left mb-4 mb-lg-0">
+        <a href="/main/" class="d-block pb-3"><img src="/main/assets/images/logo-removebg.png" class="img-fluid" alt="贸易资源小站 | CNIC-DSL Chuan Qin" style="width: 150px; height: auto;"></a>
+      </div>
+      <div class="col-lg-4 text-center mb-4 mb-lg-0">
+        <ul class="list-inline mb-0">
+          
+          <li class="list-inline-item"><a class="text-dark d-block p-2" href="/main/">主页</a></li>
+          
+          <li class="list-inline-item"><a class="text-dark d-block p-2" href="/main/paperlist">论文资源</a></li>
+          
+          <li class="list-inline-item"><a class="text-dark d-block p-2" href="/main/datalist">数据资源</a></li>
+          
+        </ul>
+      </div>
+      <!-- <div class="col-lg-4 text-lg-right text-center mb-4 mb-lg-0">
+        <ul class="list-inline social-icon mb-0">
+          
+          <li class="list-inline-item"><a href="/main/"><i class="ti-facebook"></i></a></li>
+          
+          <li class="list-inline-item"><a href="/main/"><i class="ti-twitter-alt"></i></a></li>
+          
+          <li class="list-inline-item"><a href="/main/"><i class="ti-github"></i></a></li>
+          
+          <li class="list-inline-item"><a href="/main/"><i class="ti-linkedin"></i></a></li>
+          
+        </ul>
+      </div> -->
+    </div>
+    <div class="text-center mt-4">
+      <span><p>Copyright © 2025 Designed and Developed by <a href="https://dylan-qin.github.io/">Chuan Qin</a></p>
+</span>
+    </div>
+  </div>
+</footer>
+<!-- /footer -->
+
+<!-- JS Plugins -->
+
+<script src="/main/assets/plugins/jQuery/jquery.min.js"></script>
+
+<script src="/main/assets/plugins/bootstrap/bootstrap.min.js"></script>
+
+<script src="/main/assets/plugins/search/lunr.min.js"></script>
+
+<script src="/main/assets/plugins/search/search.js"></script>
+
+
+<!-- Main Script -->
+<script src="/main/assets/js/script.js"></script>
+</body>
+
+</html>

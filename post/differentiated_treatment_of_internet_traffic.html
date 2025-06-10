@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <meta charset="utf-8">
+  <title>贸易资源小站 | CNIC-DSL Chuan Qin</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="这是关于贸易相关的科学数据、论文资源汇聚的网站，欢迎点击使用">
+  
+  <!-- theme meta -->
+  <meta name="theme-name" content="northendlab-jekyll" />
+  
+  
+
+  
+  <link rel="stylesheet" href="/main/assets/plugins/bootstrap/bootstrap.min.css">
+  
+  <link rel="stylesheet" href="/main/assets/plugins/themify-icons/themify-icons.css">
+  
+
+  <!-- Main Stylesheet -->
+  <link href="/main/assets/scss/style.css" rel="stylesheet">
+
+  <!--Favicon-->
+  <link rel="shortcut icon" href="/main/assets/images/favicon.png " type="image/x-icon">
+  <link rel="icon" href="/main/assets/images/favicon.png " type="image/x-icon">
+
+  <!-- google-analytics -->
+  
+
+</head>
+
+
+<body>
+	
+	<!-- navigation -->
+<header class="fixed-top navigation">
+  <div class="container">
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-transparent">
+      <a class="navbar-brand" href="/main/"><img class="img-fluid" src="/main/assets/images/logo-removebg.png" alt="贸易资源小站 | CNIC-DSL Chuan Qin" style="width: 100px; height: auto;"></a>
+      <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navigation">
+        <i class="ti-menu h3"></i>
+      </button>
+
+      <div class="collapse navbar-collapse text-center" id="navigation">
+        <ul class="navbar-nav ml-auto">
+          
+            
+
+            <li class="nav-item">
+              <a class="nav-link" href="/main/">主页</a>
+            </li>
+            
+          
+            
+
+            <li class="nav-item">
+              <a class="nav-link" href="/main/paperlist">论文资源</a>
+            </li>
+            
+          
+            
+
+            <li class="nav-item">
+              <a class="nav-link" href="/main/datalist">数据资源</a>
+            </li>
+            
+          
+        </ul>
+        
+        <!-- search -->
+        <div class="search">
+          <button id="searchOpen" class="search-btn"><i class="ti-search"></i></button>
+          <div class="search-wrapper">
+            <form action="/main/search.html" class="h-100">
+              <input class="search-box px-4" id="search-box" name="query" type="search" placeholder="输入查询关键词...">
+            </form>
+            <button id="searchClose" class="search-close"><i class="ti-close text-dark"></i></button>
+          </div>
+        </div>
+        
+      </div>
+    </nav>
+  </div>
+</header>
+<!-- /navigation -->
+	<div class="py-5 d-none d-lg-block"></div>
+	<section class="section">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 mx-auto block shadow mb-5">
+        <h2>Differentiated Treatment of Internet Traffic</h2>
+        <div class="mb-3 post-meta">
+          
+          Bitag technical working group
+          
+          Jan 14, 2016,
+          
+          
+          <a href="/main/tag/internet">Internet</a>
+          
+          <a href="/main/tag/networking"> networking</a>
+          
+          <a href="/main/tag/differentiation"> differentiation</a>
+          
+          <a href="/main/tag/prioritization"> prioritization</a>
+          
+          
+        </div>
+        
+        <div class="content mb-5">
+          <p>The Internet is composed of interconnected networks, each having its own architecture and technical characteristics. The data transmitted across these networks is formatted as packets containing information payloads encapsulated within one or more headers, which in turn provide the information needed by networks to deliver the packets to their destinations. As these packets travel across networks, they contend with other packets for network resources. Contention can occur at any point where two or more packets can compete for a resource at the same time. The simplest way to handle such requests would be on a first come, first served basis (also known as First In First Out, or FIFO). In practice, however, network operators make many exceptions to FIFO, using the packet header information to classify packets into flows and treating those flows differently, for example rearranging the order or the timing with which packets are sent, or sending them along different network paths. Differentiated treatment of Internet Access Service traffic has been a subject of debate and regulatory scrutiny. In February 2015, the Federal Communications Commission (FCC) adopted Open Internet rules that address paid prioritization as well as other topics. This report touches on a broad range of questions associated with differentiation, but is not intended to address or analyze the economic, legal, regulatory, or public policy issues that the differentiated treatment of Internet access service traffic may raise, focusing instead on the technical issues. The ability to treat traffic differentially has been built into Internet protocols from the beginning. The specifications for both IPv4 and IPv6 have included fields to support traffic differentiation since their inception (initially IPv4’s Type of Service or ToS field) to indicate to routers the quality of service desired, in terms of queuing precedence and routing parameters around delay, rate, and reliability. This was changed to more generic service descriptions with the definition of the Differentiated Services Field, and implemented in IPv4 and IPv6. Notably, traffic differentiation in this sense has not been implemented in multi-provider environments, although it is extensively used within specific networks. End to end deployment would require the harmonization and cooperation of a large number, if not all, of the relevant network operators. In its broadest sense, traffic differentiation includes any technique that classifies and applies potentially different treatment to two or more traffic flows contending for resources on a network (a flow being a group of packets that share a common set of properties). Differentiated treatment of network traffic is a two-part process: (1) traffic is classified into traffic streams, and (2) a prescribed set of actions is applied to each stream. This treatment may determine the order in which routers and switches send packets from different flows across the link, the rate of transmission of a given flow, or even whether certain packets are sent at all. While the techniques used for traffic differentiation overlap with those used to manage congestion, differentiation has a broader purpose that includes meeting service level agreement (SLA) guarantees and selecting paths for traffic from different applications, among other things. Differentiated treatment of traffic can also contribute both to the efficiency of a network and to the predictability of the manner in which network resources are shared. Differentiation can be complex, and a common vocabulary is key. This report uses the terms “differentiated treatment” or “differentiation,” as opposed to “prioritization” when referring to the full range of treatments that may be applied to traffic flows. The technical definition of “prioritization” is narrow and generally applies only to certain scheduling, dropping, and marking techniques. This report uses “differentiation” in a much broader sense, including most of the ways in which packets may be treated differently from each other while en route to their respective destinations across one or more networks. The scope of differentiation in this report encompasses the classic techniques of scheduling, shaping and queue management by which packets are processed at a network node, and also includes the techniques by which traffic flows are segregated or forwarded onto different physical or logical network paths where they may encounter greater or lesser propagation delays or contention for resources. This report addresses differentiation applied to traffic on Internet access services, as well as the impacts to Internet access services when differentiation is applied to other traffic carried over the same network. Traffic for mass-market Internet access services is often carried over a common infrastructure with traffic associated with other IP services, as well as the network management traffic used to control devices and report status from them. Since differential treatment of other network traffic has the potential to affect the performance of Internet access services, it is considered here. The subjective experience perceived by the user of a networked application is known as Quality of Experience, or QoE, and the factors that contribute to QoE vary significantly from one application to the next. In contrast, Quality of Service, or QoS, describes the performance of a network service using objective metrics such as throughput, delay, delay variation, and loss. The relationship between QoS and QoE is highly dependent on the type of application, but variations in QoS have been mapped to corresponding variations in QoE for a number of applications. It is possible to use knowledge about the relationships between network performance parameters and their effects on QoE to attempt to optimize the performance of network flows for their intended applications. Differentiation is often also used to address impairments to QoS. Broadband networks use different network architectures and access technologies. Several of these network architectures have developed to take advantage of existing access infrastructure that was originally deployed for other services – for example, telephone service over twisted copper pairs or video over coaxial cable. Other networks were developed to meet specific needs, such as for mobility or for access in remote rural areas. In many cases, differences in network design can be traced to the different characteristics of the access technology used. [See report for observations and recommendations].</p>
+
+<p>互联网由相互连接的网络组成，每个网络都有其自身的架构和技术特性。这些网络间传输的数据被格式化为包含信息负载的数据包，这些负载封装在一个或多个头部中，头部则提供了网络将数据包传递到目的地所需的信息。当这些数据包在网络中传输时，它们会与其他数据包争夺网络资源。争用可能发生在任何两个或多个数据包可以同时竞争资源的地方。处理此类请求的最简单方法是先到先服务（也称为先进先出，FIFO）。然而，在实践中，网络运营商对FIFO做了许多例外处理，利用数据包头信息将数据包分类为流，并对这些流进行不同的处理，例如重新排列数据包的发送顺序或时间，或沿着不同的网络路径发送它们。互联网接入服务流量的差异化处理一直是争论和监管审查的主题。2015年2月，联邦通信委员会（FCC）通过了开放互联网规则，涉及付费优先权以及其他主题。本报告涉及与差异化相关的广泛问题，但无意讨论或分析互联网接入服务流量的差异化处理可能引发的经济、法律、监管或公共政策问题，而是专注于技术问题。从互联网协议诞生之初，差异化处理流量的能力就被内置其中。IPv4和IPv6的规范自诞生以来就包含了支持流量差异化的字段（最初是IPv4的服务类型或ToS字段），用于向路由器指示所需的服务质量，包括排队优先级以及围绕延迟、速率和可靠性的路由参数。随着差异化服务字段的定义，这些字段被改为更通用的服务描述，并在IPv4和IPv6中实现。值得注意的是，这种意义上的流量差异化尚未在多提供商环境中实现，尽管它在特定网络中被广泛使用。端到端的部署需要大量（如果不是全部）相关网络运营商的协调与合作。从最广泛的意义上讲，流量差异化包括任何对争夺网络资源的两个或多个流量流进行分类并可能进行不同处理的技术（流量流是指共享一组共同属性的一组数据包）。网络流量的差异化处理是一个分为两部分的过程：（1）将流量分类为流量流，（2）对每个流应用一组规定的操作。这种处理可能决定路由器和交换机通过链路发送来自不同流的数据包的顺序、给定流的传输速率，甚至是否发送某些数据包。虽然用于流量差异化的技术与用于管理拥塞的技术有重叠，但差异化的目的更广泛，包括满足服务级别协议（SLA）保证和为来自不同应用的流量选择路径等。流量的差异化处理还可以提高网络的效率以及网络资源共享方式的预测性。差异化可能很复杂，统一的术语是关键。本报告使用“差异化处理”或“差异化”这一术语，而不是“优先化”，以指代可能应用于流量流的全部处理方式。“优先化”的技术定义较为狭窄，通常仅适用于某些调度、丢弃和标记技术。本报告以更广泛的意义使用“差异化”，包括数据包在通过一个或多个网络传输到各自目的地的过程中可能受到的不同处理方式的大部分情况。本报告中差异化的范围涵盖了经典的调度、整形和队列管理技术，通过这些技术在网络节点上处理数据包，还包括将流量流分离或转发到不同的物理或逻辑网络路径上的技术，这些路径可能会遇到更多或更少的传播延迟或资源争用。本报告讨论了应用于互联网接入服务流量的差异化，以及当差异化应用于同一网络上承载的其他流量时对互联网接入服务的影响。大众市场互联网接入服务的流量通常与其他IP服务的流量以及用于控制设备和报告状态的网络管理流量共享一个共同的基础设施。由于其他网络流量的差异化处理可能影响互联网接入服务的性能，因此在此予以考虑。网络应用用户感知的主观体验称为体验质量（QoE），而影响QoE的因素因应用而异。相比之下，服务质量（QoS）使用吞吐量、延迟、延迟变化和丢失等客观指标描述网络服务的性能。QoS与QoE之间的关系高度依赖于应用类型，但对于许多应用，QoS的变化已被映射到QoE的相应变化。可以利用网络性能参数及其对QoE影响的知识来尝试优化网络流量的性能以适应其目标应用。差异化也常用于解决对QoS的损害。宽带网络使用不同的网络架构和接入技术。其中一些网络架构的开发是为了利用最初为其他服务部署的现有接入基础设施——例如，通过双绞铜线提供的电话服务或通过同轴电缆提供的视频服务。其他网络则是为了满足特定需求而开发的，例如移动性或偏远农村地区的接入。在许多情况下，网络设计的差异可以追溯到所使用的接入技术的不同特性。[具体观察和建议请参见报告]。</p>
+
+<p>资源链接: <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2701464">Differentiated Treatment of Internet Traffic</a></p>
+
+        </div>
+        <!-- comments -->
+        
+          <!-- disqus-comments -->
+<div class="comments" style="padding: 1rem 0">
+  <div id="disqus_thread" class="comments__article"></div>
+  <script>
+    (function () {
+      var d = document, s = d.createElement('script');
+      s.src = '//.disqus.com/embed.js';
+      s.setAttribute('data-timestamp', +new Date());
+      (d.head || d.body).appendChild(s);
+    })();
+  </script>
+  <noscript>Please enable JavaScript to view the
+    <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a>
+  </noscript>
+</div>
+<!-- /disqus-comments -->
+        
+        <!-- /comments -->
+      </div>
+    </div>
+  </div>
+</section>
+	<!-- footer -->
+<footer class="py-4 bg-light border-top">
+  <div class="container">
+    <div class="row justify-content-between align-items-center">
+      <div class="col-lg-4 text-center text-lg-left mb-4 mb-lg-0">
+        <a href="/main/" class="d-block pb-3"><img src="/main/assets/images/logo-removebg.png" class="img-fluid" alt="贸易资源小站 | CNIC-DSL Chuan Qin" style="width: 150px; height: auto;"></a>
+      </div>
+      <div class="col-lg-4 text-center mb-4 mb-lg-0">
+        <ul class="list-inline mb-0">
+          
+          <li class="list-inline-item"><a class="text-dark d-block p-2" href="/main/">主页</a></li>
+          
+          <li class="list-inline-item"><a class="text-dark d-block p-2" href="/main/paperlist">论文资源</a></li>
+          
+          <li class="list-inline-item"><a class="text-dark d-block p-2" href="/main/datalist">数据资源</a></li>
+          
+        </ul>
+      </div>
+      <!-- <div class="col-lg-4 text-lg-right text-center mb-4 mb-lg-0">
+        <ul class="list-inline social-icon mb-0">
+          
+          <li class="list-inline-item"><a href="/main/"><i class="ti-facebook"></i></a></li>
+          
+          <li class="list-inline-item"><a href="/main/"><i class="ti-twitter-alt"></i></a></li>
+          
+          <li class="list-inline-item"><a href="/main/"><i class="ti-github"></i></a></li>
+          
+          <li class="list-inline-item"><a href="/main/"><i class="ti-linkedin"></i></a></li>
+          
+        </ul>
+      </div> -->
+    </div>
+    <div class="text-center mt-4">
+      <span><p>Copyright © 2025 Designed and Developed by <a href="https://dylan-qin.github.io/">Chuan Qin</a></p>
+</span>
+    </div>
+  </div>
+</footer>
+<!-- /footer -->
+
+<!-- JS Plugins -->
+
+<script src="/main/assets/plugins/jQuery/jquery.min.js"></script>
+
+<script src="/main/assets/plugins/bootstrap/bootstrap.min.js"></script>
+
+<script src="/main/assets/plugins/search/lunr.min.js"></script>
+
+<script src="/main/assets/plugins/search/search.js"></script>
+
+
+<!-- Main Script -->
+<script src="/main/assets/js/script.js"></script>
+</body>
+
+</html>
